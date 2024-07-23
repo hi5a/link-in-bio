@@ -1,0 +1,19 @@
+.links {
+    width: auto;
+     max-width: 500px;
+     margin: 15px auto;
+ }
+ .links a {
+     /*LINKS TEXT*/
+     color: black;
+     text-decoration: none;
+     text-align: center;
+ 
+     /*LINKS BORDER:*/
+     border: 2px solid blue;
+     border-radius: 10px;
+ 
+     display: block; /*each link takes a whole line*/
+     margin: 10px;
+     padding: 10px; 
+ }
