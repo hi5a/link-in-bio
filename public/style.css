@@ -2,8 +2,8 @@
     width: auto;
      max-width: 500px;
      margin: 15px auto;
- }
- .links a {
+}
+.links a {
      /*LINKS TEXT*/
      color: black;
      text-decoration: none;
@@ -16,4 +16,19 @@
      display: block; /*each link takes a whole line*/
      margin: 10px;
      padding: 10px; 
- }
+}
+.joe img {
+    width: 255px;
+    margin: auto;
+    display: block;
+}
+.links svg {
+    width: 16px;
+    margin: auto;
+    display: block;
+}
+#ad-container img {
+    width: 464px;
+    margin: auto;
+    display: block;
+}
