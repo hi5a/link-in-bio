@@ -1,0 +1,59 @@
+---
+interface Props {
+  title: string;
+  desc: string;
+}
+
+const { title, desc } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={desc} />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+   	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="c1e6a0ba-e242-4fcf-99bc-14fd77cc7496"></script>
+
+    {/* CSS Styles */}
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://static.nordicgamelab.org/bootstrap.css">
+    <script src="https://static.nordicgamelab.org/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    {/* Open Graph Facebook  */}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={desc} />
+
+    {/* Twitter */}
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={desc} />
+    <!-- <meta
+      property="twitter:image"
+      content={`${domain}}${og}title=${title}&lead=${desc}`}
+    /> -->
+    <!-- <meta property="twitter:url" content={domain} /> -->
+
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <footer class="text-center">
+        <p id="copyright">© {year} Nordic Game Lab, LLC. All rights reserved.</p>
+     </footer>
+     <div id="ad-container" class="text-center"></div>
+     <script type="module">
+       import createAdElement from'https://static.nordicgamelab.org/v1/ads.min.js';let a=document.getElementById('ad-container');let d=await createAdElement('464px','c3a8c1c5-5579-4b96-8073-95ac3ca9d189');a.appendChild(d);
+     </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+interface Props {
+  title: string;
+  desc: string;
+}
+
+const { title, desc } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="bg-white dark:bg-black">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/ico" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={desc} />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+   	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="c1e6a0ba-e242-4fcf-99bc-14fd77cc7496"></script>
+
+    {/* Open Graph Facebook  */}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={desc} />
+
+    {/* Twitter */}
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={desc} />
+    <!-- <meta
+      property="twitter:image"
+      content={`${domain}}${og}title=${title}&lead=${desc}`}
+    /> -->
+    <!-- <meta property="twitter:url" content={domain} /> -->
+
+    <title>{title}</title>
+  </head>
+  <body
+    class="w-full min-h-screen h-full flex flex-col justify-center items-center antialiased box-border selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black p-4 md:p-8 break-word font-suisse space-y-4"
+  >
+  <Header />
+    <main class="h-full w-full bg-white dark:bg-black flex flex-col justify-start items-center gap-4">
+      <slot />
+    </main>
+	<Footer />
+  </body>
+</html>

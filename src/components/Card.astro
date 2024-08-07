@@ -1,0 +1,23 @@
+---
+import CardContent from "./CardContent.astro";
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div
+  class="w-full h-full flex flex-col justify-center items-stretch gap-4 md:gap-8 p-4 md:p-8 border border-black dark:border-white rounded-[24px] text-black dark:text-white"
+>
+  <div class="w-full h-full md:flex justify-between group transition-all">
+    <p
+      class="text-black dark:text-white w-fit uppercase px-4 py-1 border border-black dark:border-white rounded-full cursor-pointer"
+    >
+      {title}
+    </p>
+  </div>
+  <div class="w-full h-full flex flex-col items-center justify-center">
+    <slot />
+  </div>
+</div>
