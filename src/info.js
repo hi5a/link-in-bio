@@ -5,7 +5,7 @@ export const i = {
     description: "Hi, I'm Andrew. I have over 5 years of experience as a software engineer with a multidisciplinary background. My main goal is to create meaningful products that cause positive disruption.",
     status: "⚡︎ Open for remote/async offers",
     email: "📧 andrew@nordicgamelab.org",
-    photo: "https://flow.page/_next/image?url=https%3A%2F%2Fcdn.flowpage.com%2Fimages%2Fbea6af70-0013-4267-8b66-965b405397e8-profile-picture%3Fm%3D1628945541&amp&w=384&amp&q=75",
+    photo: "https://static.nordicgamelab.org/bea6af70-0013-4267-8b66-965b405397e8-profile-picture.png",
     featuredWork: [
         {
             title: "Nordic Game Lab, LLC.",
@@ -16,15 +16,7 @@ export const i = {
         {
             title: "Nordic Game Lab advertising platform",
             url: "https://blog.nordicgamelab.com"
-        },
-        {
-            title: "Project y",
-            url: "0xshapeshifter.dev"
-        },
-        {
-            title: "Project Z",
-            url: "0xshapeshifter.dev"
-        },
+        }
     ],
     recognition: [
     ],
@@ -32,7 +24,7 @@ export const i = {
         {
             title: "Links",
             url: "https://aball.nordicgamelab.org/links",
-            alt: "X logo",
+            alt: "Soical Links",
             images: {
                 dark: "../src/assets/social/dark/tg.svg",
                 light: "../src/assets/social/light/tg.svg",
