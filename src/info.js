@@ -15,7 +15,7 @@ export const i = {
     recentProjects: [
         {
             title: "Nordic Game Lab advertising platform",
-            url: "https://blog.nordicgamelab.com"
+            url: "https://blog.nordicgamelab.org/blog/building-a-privacy-focused-advertising-platform-the-nordic-game-lab-approach/"
         }
     ],
     recognition: [
@@ -24,7 +24,7 @@ export const i = {
         {
             title: "Links",
             url: "https://aball.nordicgamelab.org/links",
-            alt: "Soical Links",
+            alt: "Socials",
             images: {
                 dark: "../src/assets/social/dark/tg.svg",
                 light: "../src/assets/social/light/tg.svg",
