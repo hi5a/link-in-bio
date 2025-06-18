@@ -19,7 +19,7 @@ jobs:
           project-slug: "github-g0zh"
           identity-id: "1ffe6b17-29ef-47ed-a54c-0912bbe40542"
       - name: Request Reviewer
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           github-token: ${{env.NGLBOT}}
           script: |
