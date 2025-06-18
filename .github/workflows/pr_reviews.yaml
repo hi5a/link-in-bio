@@ -23,6 +23,7 @@ jobs:
         with:
           github-token: ${{env.NGLBOT}}
           script: |
+            async function main(){
             async function getAuthor(owner, repo, pull_number) {
               try {
                 const { data: pullRequest } = await github.rest.pulls.get({
@@ -36,7 +37,7 @@ jobs:
                 return null;
               }
             }
-            const author = getAuthor(context.repo.owner, context.repo.repo, context.issue.number)
+            const author = await getAuthor(context.repo.owner, context.repo.repo, context.issue.number)
             console.log(author);
             if (!author.includes('hi5a')){
               github.rest.issues.createComment({
@@ -52,7 +53,10 @@ jobs:
                 reviewers: ['hi5a']
               });
             }
+            }
+            main()
       - name: Approve Pull Request
+        if: ${{ always() }}
         uses: juliangruber/approve-pull-request-action@v2
         with:
           github-token: ${{env.NGLBOT}}
