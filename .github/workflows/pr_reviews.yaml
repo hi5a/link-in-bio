@@ -23,7 +23,21 @@ jobs:
         with:
           github-token: ${{env.NGLBOT}}
           script: |
-            const author = context.payload.actor;
+            async function getAuthor(owner, repo, pull_number) {
+              try {
+                const { data: pullRequest } = await octokit.pulls.get({
+                  owner: owner,
+                  repo: repo,
+                  pull_number: pull_number,
+                });
+                return pullRequest.user.login;
+              } catch (error) {
+                console.error("Error fetching pull request:", error);
+                return null;
+              }
+            }
+            const author = getAuthor(context.repo.owner, context.repo.repo, context.issue.number)
+            console.log(author);
             if (!author.includes('hi5a')){
               github.rest.issues.createComment({
                 issue_number: context.issue.number,
