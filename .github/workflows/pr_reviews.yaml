@@ -25,7 +25,7 @@ jobs:
           script: |
             async function getAuthor(owner, repo, pull_number) {
               try {
-                const { data: pullRequest } = await octokit.pulls.get({
+                const { data: pullRequest } = await github.rest.pulls.get({
                   owner: owner,
                   repo: repo,
                   pull_number: pull_number,
