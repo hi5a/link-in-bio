@@ -23,7 +23,7 @@ jobs:
         with:
           github-token: ${{env.NGLBOT}}
           script: |
-            const author = context.payload.actor;
+            const author = context.actor;
             if (!author.includes('hi5a')){
               github.rest.issues.createComment({
                 issue_number: context.issue.number,
