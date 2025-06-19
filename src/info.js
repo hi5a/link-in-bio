@@ -23,7 +23,7 @@ export const i = {
     socialMedia: [
         {
             title: "Links",
-            url: "https://aball.nordicgamelab.org/links",
+            url: "/links",
             alt: "Socials",
             images: {
                 dark: "../src/assets/social/dark/tg.svg",
