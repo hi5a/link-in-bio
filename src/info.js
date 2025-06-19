@@ -4,7 +4,7 @@ export const i = {
     occupation: "Software Engineer",
     description: "Hi, I'm Andrew. I have over 5 years of experience as a software engineer with a multidisciplinary background. My main goal is to create meaningful products that cause positive disruption.",
     status: "⚡︎ Open for remote/async offers",
-    email: "📧 andrew@nordicgamelab.org",
+    email: "📧 andrew@aball.dev",
     photo: "https://cdn.aball.dev/headshot-proto-background.png",
     featuredWork: [
         {
@@ -26,7 +26,7 @@ export const i = {
             url: "/links",
             alt: "Socials",
             images: {
-                dark: "../src/assets/social/dark/tg.svg",
+                dark: "./src/assets/social/dark/tg.svg",
                 light: "../src/assets/social/light/tg.svg",
             }
         },
