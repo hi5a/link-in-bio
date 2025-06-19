@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/linksLayout.astro";
+import { i } from "../info.js"
 ---
 
 <Layout
@@ -7,7 +8,7 @@ import Layout from "../layouts/linksLayout.astro";
   desc="Social Links for Andrew Ball"
 >
 <div class="text-center joe">
-    <img src="https://static.nordicgamelab.org/bea6af70-0013-4267-8b66-965b405397e8-profile-picture.png" class="rounded-circle" alt="avatar1" />
+    <img src={i.photo} class="rounded-circle" alt="avatar1" />
     <h1>Andrew Ball</h1>
     <div class="links">
       <a href="https://github.com/hi5a"><i class="bi bi-github"></i> GitHub </a>
