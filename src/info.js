@@ -26,8 +26,8 @@ export const i = {
             url: "/links",
             alt: "Socials",
             images: {
-                dark: "./src/assets/social/dark/tg.svg",
-                light: "../src/assets/social/light/tg.svg",
+                dark: "https://pics.aball.dev/img/social/tg.svg?dark=true",
+                light: "https://pics.aball.dev/img/social/tg.svg?dark=false",
             }
         },
     ],
