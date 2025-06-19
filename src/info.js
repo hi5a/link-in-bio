@@ -5,7 +5,7 @@ export const i = {
     description: "Hi, I'm Andrew. I have over 5 years of experience as a software engineer with a multidisciplinary background. My main goal is to create meaningful products that cause positive disruption.",
     status: "⚡︎ Open for remote/async offers",
     email: "📧 andrew@nordicgamelab.org",
-    photo: "https://static.nordicgamelab.org/bea6af70-0013-4267-8b66-965b405397e8-profile-picture.png",
+    photo: "https://cdn.aball.dev/headshot-proto-background.png",
     featuredWork: [
         {
             title: "Nordic Game Lab, LLC.",
