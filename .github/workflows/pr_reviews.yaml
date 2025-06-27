@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Import Secrets
-        uses: Infisical/secrets-action@v1.0.11
+        uses: Infisical/secrets-action@v1.0.12
         with:
           method: "oidc"
           env-slug: "dev"
