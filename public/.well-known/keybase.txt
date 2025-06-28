@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/aball
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://aball.dev
+  * I am aball (https://keybase.io/aball) on keybase.
+  * I have a public key ASAsZt0s0CfEjx4cYp7a4H9IeMPSuoPI5VidUiw7tneoiAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01202c66dd2cd027c48f1e1c629edae07f4878c3d2ba83c8e5589d522c3bb677a8880a",
+      "host": "keybase.io",
+      "kid": "01202c66dd2cd027c48f1e1c629edae07f4878c3d2ba83c8e5589d522c3bb677a8880a",
+      "uid": "fdb38e53d15e293d4833fadac197a219",
+      "username": "aball"
+    },
+    "merkle_root": {
+      "ctime": 1751137978,
+      "hash": "58fe543bec1da21c0f185bd861064ddf81deed50df917c8c1c3e0c6bf7725f8df5d140fbd023cb4cfd2ed4f7cbcce009617f029a5745ee6b0d36e25edc9ad569",
+      "hash_meta": "6d05a58ff2cac2ea3e60e80ec0510f632c71541a2f28103f0b82b481aed1389e",
+      "seqno": 26906950
+    },
+    "service": {
+      "entropy": "zgfCdkGcWUxLNlaLoiVu8t/j",
+      "hostname": "aball.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.5.1"
+  },
+  "ctime": 1751138093,
+  "expire_in": 504576000,
+  "prev": "a15b45eabe197dcf07ba7bfb16056e02a5b7b152a9e4a38f5bbaf154fd0d930c",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgLGbdLNAnxI8eHGKe2uB/SHjD0rqDyOVYnVIsO7Z3qIgKp3BheWxvYWTESpcCBsQgoVtF6r4Zfc8Hunv7FgVuAqW3sVKp5KOPW7rxVP0NkwzEIEOPIRvyICD5O+w0/8qMJcceNZyaKapZKXt5N3lmz+AdAgHCo3NpZ8RA5BFbNw3J1wWZKla/o5LtGZvBhQYfeW4L5OuTvebdFs9bpcfdXxdntlkfHUFG8lIpsa90pW4cAmXNIQz/iTpAAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIA6EalWElSaQGJqQBEr6FTRZIUOworp1E1DarS9IpuXXo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aball
+
+==================================================================
