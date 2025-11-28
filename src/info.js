@@ -36,5 +36,9 @@ export const i = {
         sign: "＊",
         title: "by 0xhapeshifter",
         url: "https://0xshapeshifter.dev/productize"
+    },
+    buildInfo: {
+        short: "{{SHORT_COMMIT}}",
+        url: "https://github.com/hi5a/link-in-bio/commit/{{LONG_COMMIT}}"
     }
 }

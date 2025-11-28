@@ -49,6 +49,16 @@ import { i } from "../info";
           {i.support.title}
         </span>
       </a>
+    ),
+    i.buildInfo && (
+      <a
+        href={i.buildInfo.url}
+        class="p-4 text-center text-[#0070F3] border border-black dark:border-white w-full md:hover:w-full md:min-w-[64px] md:w-fit rounded-[24px] group flex justify-center items-center transition-transform"
+      >
+        <span class="text-black dark:text-white md:hidden md:group-hover:inline-block">
+          {i.buildInfo.short}
+        </span>
+      </a>
     )
   }
 </footer>
