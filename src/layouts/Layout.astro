@@ -24,7 +24,7 @@ const { title, desc } = Astro.props;
     <link rel="manifest" href="/site.webmanifest">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="c1e6a0ba-e242-4fcf-99bc-14fd77cc7496"></script>
     <!-- Matomo -->
-    <script>
+    <script is:inline>
       var _paq = window._paq = window._paq || [];
       /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
       _paq.push(['trackPageView']);
