@@ -1,10 +1,10 @@
 export const i = {
-    firstName: "Andrew",
+    firstName: "Ash",
     secondName: "Ball",
     occupation: "Software Engineer",
-    description: "Hi, I'm Andrew. I have over 5 years of experience as a software engineer with a multidisciplinary background. My main goal is to create meaningful products that cause positive disruption.",
+    description: "Hi, I'm Ash. I have over 5 years of experience as a software engineer with a multidisciplinary background. My main goal is to create meaningful products that cause positive disruption.",
     status: "⚡︎ Open for remote/async offers",
-    email: "📧 andrew@aball.dev",
+    email: "📧 ash@aball.dev",
     photo: "https://cdn.aball.dev/headshot-proto-background.png",
     featuredWork: [
         {

@@ -22,6 +22,22 @@ const year = new Date().getFullYear();
    	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="c1e6a0ba-e242-4fcf-99bc-14fd77cc7496"></script>
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.aball.dev/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+
 
     {/* CSS Styles */}
     <link rel="stylesheet" href="/style.css">
@@ -49,7 +65,7 @@ const year = new Date().getFullYear();
   <body>
     <slot />
     <footer class="text-center">
-        <p id="copyright">© {year} Nordic Game Lab, LLC. All rights reserved.</p>
+        <p id="copyright">© {year} Ash Ball. All rights reserved.</p>
      </footer>
      <div id="ad-container" class="text-center"></div>
      <script src="https://static.nordicgamelab.org/v1/ads.min.js" data-site-id="be54bc9d-ee5c-4cb6-bcc3-2cb2c50b359c" data-image-size="464px" data-host-url="ads.nordicgamelab.org"></script>
