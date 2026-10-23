@@ -1,0 +1,85 @@
+#
+#  _   _               _ _         _____                        _           _     
+# | \ | |             | (_)       / ____|                      | |         | |    
+# |  \| | ___  _ __ __| |_  ___  | |  __  __ _ _ __ ___   ___  | |     __ _| |__  
+# | . ` |/ _ \| '__/ _` | |/ __| | | |_ |/ _` | '_ ` _ \ / _ \ | |    / _` | '_ \ 
+# | |\  | (_) | | | (_| | | (__  | |__| | (_| | | | | | |  __/ | |___| (_| | |_) |
+# |_| \_|\___/|_|  \__,_|_|\___|  \_____|\__,_|_| |_| |_|\___| |______\__,_|_.__/             
+
+
+User-agent: *
+Disallow: /cdn-cgi/
+Disallow: /admin/
+Disallow: /.well-known/
+Disallow: /images/
+Disallow: *utm_expid=
+Disallow: *source=
+Disallow: *utm_source=
+Disallow: *utm_campaign=
+Disallow: *utm_content=
+Disallow: *__hstc=
+Disallow: *gclid=
+Disallow: *magazineName=
+Disallow: *_ga=
+Disallow: *country=
+Disallow: *company_size=
+Disallow: *_hsenc=
+Disallow: *zd_source=
+Disallow: *wt.mc_id=
+Disallow: *via=
+Disallow: *utm_medium=
+Disallow: *spc-source=
+Disallow: *sp=
+Disallow: *sort=
+Disallow: *sf11500465=
+Disallow: *sa=
+Disallow: *ref=
+Disallow: *preview=
+Disallow: *pr=
+Disallow: *o=
+Disallow: *NoCode=
+Disallow: *mod=
+Disallow: *kui=
+Disallow: *industry=
+Disallow: *iframe=
+Disallow: *hsLang=
+Disallow: *hsCtaTracking=
+Disallow: *hash=
+Disallow: *gh_jid=
+Disallow: *filterTags=
+Disallow: *clickId=
+Disallow: *.js
+Disallow: *.css
+Disallow: *ca_referer=
+Disallow: /?
+
+# Crawlers of certain social media sites are allowed to access page markup.
+User-agent: Twitterbot
+User-agent: facebookexternalhit
+Allow: /images
+
+User-agent: AdsBot-Google
+User-agent: AdsIdxBot
+User-agent: Google-InspectionTool
+Allow: /
+
+
+# Common LLM bots
+User-agent: anthropic-ai
+User-agent: Applebot-Extended
+User-agent: Google-Extended
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: cohere-ai
+User-agent: Diffbot
+User-agent: FacebookBot
+User-agent: GPTBot
+User-agent: ImagesiftBot
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+User-agent: Omgilibot
+User-agent: PerplexityBot
+User-agent: Timpibot
+Disallow: /
